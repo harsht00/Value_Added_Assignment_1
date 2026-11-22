@@ -125,3 +125,35 @@ body {
     white-space: nowrap;
 }
 
+/* Primary action button */
+.primary-btn {
+    background: linear-gradient(135deg, #672bdf, #5020c5);
+    color: white;
+}
+
+.primary-btn span {
+    margin-left: 7px;
+}
+
+/* Secondary action button */
+.secondary-btn {
+    border: 2px solid #6c35e7;
+    color: #5725d2;
+    background: white;
+}
+
+/* Positions the coding illustration on the right */
+.hero-image {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 440px;
+    max-height: 365px;
+    object-fit: contain;
+}
+
