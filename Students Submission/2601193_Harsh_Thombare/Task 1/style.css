@@ -157,3 +157,48 @@ body {
     object-fit: contain;
 }
 
+/* Features section: Creates the background for the three feature cards */
+.features {
+    height: 195px;
+    background: linear-gradient(135deg, #faf8ff, #f3efff);
+    padding: 17px 4%;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+/* Gives all three cards equal width and centers their content */
+.feature-card {
+    flex: 1;
+    min-height: 160px;
+    background: white;
+    border: 1px solid #e6e1f3;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 12px rgba(50, 30, 100, 0.08);
+}
+
+/* Sets the size of icons inside the feature cards */
+.feature-card img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+/* Styles feature card headings */
+.feature-card h2 {
+    font-size: 21px;
+    color: #15151f;
+    margin-bottom: 6px;
+}
+
+/* Styles feature card descriptions */
+.feature-card p {
+    font-size: 15px;
+    color: #41414c;
+    text-align: center;
+}
