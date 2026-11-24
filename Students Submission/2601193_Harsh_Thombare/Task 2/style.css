@@ -157,3 +157,44 @@ body {
     font-size: 23px;
     color: #555577;
 }
+
+/* ---------- WELCOME BANNER ---------- */
+
+/* Banner: light purple box with text on the left and picture on the right */
+.welcome-banner {
+    height: 145px;
+    margin: 15px 25px;
+    padding: 15px 30px;
+    border-radius: 17px;
+    background: linear-gradient(110deg, #eee9ff, #f0edff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Text part of the banner */
+.welcome-text {
+    width: 62%;
+}
+
+/* "Welcome Back" heading (nowrap keeps it on one line) */
+.welcome-text h2 {
+    font-size: 29px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+/* Small message below the heading */
+.welcome-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555d7c;
+    max-width: 600px;
+}
+
+/* Illustration on the right side of the banner */
+.welcome-banner img {
+    width: 35%;
+    height: 125px;
+    object-fit: contain;
+}
