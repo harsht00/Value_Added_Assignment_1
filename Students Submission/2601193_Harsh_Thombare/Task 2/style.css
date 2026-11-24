@@ -94,3 +94,66 @@ body {
     background-color: #7777a5;
     margin: 9px 17px 10px;
 }
+
+/* ---------- MAIN CONTENT ---------- */
+
+/* Main content: takes all the space left after the sidebar (flex: 1) */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Top bar: title on the left and user info on the right
+   space-between pushes the two parts to opposite ends */
+.topbar {
+    height: 65px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e5f1;
+    background-color: white;
+}
+
+/* "Dashboard" heading */
+.topbar h1 {
+    font-size: 30px;
+}
+
+/* Notification bell and profile kept together on the right */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Size of the bell icon */
+.notification-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* Profile picture, name and arrow in one row */
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Size of the profile picture */
+.profile-info img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Small dropdown arrow next to the name */
+.dropdown {
+    font-size: 23px;
+    color: #555577;
+}
