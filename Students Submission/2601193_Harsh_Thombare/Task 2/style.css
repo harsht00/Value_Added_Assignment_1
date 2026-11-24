@@ -198,3 +198,218 @@ body {
     height: 125px;
     object-fit: contain;
 }
+
+/* ---------- STATISTICS CARDS ---------- */
+
+/* Row that holds the four cards */
+.statistics {
+    display: flex;
+    gap: 18px;
+    margin: 0 25px 15px;
+}
+
+/* Common style for all four cards
+   flex: 1 gives every card the same width */
+.stat-card {
+    flex: 1;
+    min-width: 0;
+    height: 85px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 12px;
+    border: 1px solid transparent;
+}
+
+/* Icon inside each card */
+.stat-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Big number (3, 12, 78%, 5) */
+.stat-card h2 {
+    font-size: 27px;
+    margin-bottom: 3px;
+}
+
+/* Label below the number */
+.stat-card p {
+    font-size: 16px;
+    color: #414563;
+    white-space: nowrap;
+}
+
+/* Different background and border colour for each card */
+.purple {
+    background-color: #eeeaff;
+    border-color: #ded6ff;
+}
+
+.green {
+    background-color: #e5f8ed;
+    border-color: #d0f0df;
+}
+
+.yellow {
+    background-color: #fff6e2;
+    border-color: #ffebc1;
+}
+
+.pink {
+    background-color: #ffeaee;
+    border-color: #ffd9e0;
+}
+
+
+/* ---------- COURSES AND ASSIGNMENTS ---------- */
+
+/* Row that places the two white boxes side by side */
+.dashboard-details {
+    display: flex;
+    gap: 22px;
+    margin: 0 25px;
+}
+
+/* White box style used for both Courses and Assignments
+   box-shadow adds a soft shadow around it */
+.details-card {
+    flex: 1;
+    min-width: 0;
+    height: 260px;
+    padding: 15px 20px;
+    border: 1px solid #e1e0f0;
+    border-radius: 17px;
+    box-shadow: 0 3px 6px rgba(40, 35, 90, 0.08);
+    background-color: white;
+}
+
+/* Heading of each box with a thin line below it */
+.details-card > h2 {
+    font-size: 21px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eeeef5;
+}
+
+
+/* ----- Courses box ----- */
+
+/* One course row: icon, name and progress in a line */
+.course-item {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #eeeef5;
+}
+
+/* No line below the last course */
+.course-item:last-child {
+    border-bottom: none;
+}
+
+/* Course icon */
+.course-item > img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Course name and topics take the remaining space */
+.course-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.course-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.course-info p {
+    font-size: 14px;
+    color: #555d7c;
+}
+
+/* Percentage number placed above the progress bar */
+.course-progress {
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.course-progress span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Grey bar that shows the full 100% */
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    background-color: #e5e5f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Purple part of the bar, its width comes from the style in the HTML */
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6636d5, #7046df);
+    border-radius: 10px;
+}
+
+
+/* ----- Assignments box ----- */
+
+/* One assignment row: icon, title with date, and status */
+.assignment-item {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #eeeef5;
+}
+
+/* No line below the last assignment */
+.assignment-item:last-child {
+    border-bottom: none;
+}
+
+/* Assignment icon */
+.assignment-item > img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Title and due date take the remaining space */
+.assignment-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.assignment-info h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.assignment-info p {
+    font-size: 14px;
+    color: #555d7c;
+}
+
+/* Red "Pending" label with a light pink background */
+.status {
+    background-color: #ffe3e9;
+    color: #e52e4d;
+    padding: 7px 10px;
+    border-radius: 9px;
+    font-size: 14px;
+    white-space: nowrap;
+}
