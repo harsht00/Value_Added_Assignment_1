@@ -20,3 +20,77 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+/* ---------- SIDEBAR ---------- */
+
+/* Sidebar: dark purple panel on the left side */
+.sidebar {
+    width: 18.7%;
+    min-width: 220px;
+    height: 100vh;
+    background: linear-gradient(160deg, #202047, #25254f);
+    padding: 20px 13px;
+    color: white;
+}
+
+/* Logo area: image and portal name in one row */
+.portal-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    margin-bottom: 38px;
+}
+
+/* Size of the graduation cap logo */
+.portal-logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+/* "Student Portal" text */
+.portal-logo h2 {
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+/* Menu: flex with column direction stacks the links one below another */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Each menu link: icon and text in one row with rounded corners */
+.menu-item {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 0 20px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Size of the small icons in the menu */
+.menu-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Active link: purple background so the current page stands out */
+.menu-item.active {
+    background: linear-gradient(135deg, #704bdc, #6040c5);
+}
+
+/* Divider: thin line between the menu links and Logout */
+.menu-divider {
+    height: 1px;
+    background-color: #7777a5;
+    margin: 9px 17px 10px;
+}
